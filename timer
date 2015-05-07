@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+import time
+
+count = 0
+
+def show():
+    print(c.clear)
+    print(c.magenta + 'Press Ctrl + C to stop!',end=' ', flush=True)
+    print(count)
+
+#----------------------------------------------------------------------
+
+show()
+
+while True:
+    time.sleep(1)
+    count += 1
+    show()
