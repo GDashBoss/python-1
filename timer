@@ -4,18 +4,42 @@ import colors as c
 
 import time
 
-count = 0
+hours = 0
+minutes = 0
+seconds = 0
+hundredths = 0
 
 def show():
     print(c.clear)
     print(c.magenta + 'Press Ctrl + C to stop!',end=' ', flush=True)
-    print(count)
+    print(seconds)
 
 #----------------------------------------------------------------------
 
-show()
-
 while True:
-    time.sleep(1)
-    count += 1
-    show()
+    print(c.clear)
+    print(c.yellow + 'Hours: ')
+    print(hours)
+    print(c.yellow + 'Minutes: ')
+    print(minutes)
+    print(c.yellow + 'Seconds: ')
+    print (seconds)
+    print(c.yellow + 'Hunderdths: ')
+    print(hundredths)
+    time.sleep(0.01)
+    hundredths += 1
+    if hundredths == 100:
+        seconds += 1
+        hundredths = 0
+    if seconds == 60:
+        minutes += 1
+        seconds + 0
+    if minutes == 60:
+        hours += 1
+        minutes = 0
+
+
+
+
+
+
