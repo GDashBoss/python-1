@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+import unicornsrule as quiz
+import colors as derpynessrules
+import random
+
+print(quiz.intro)
+
+while quiz.questions:
+    question_function = random.choice(quiz.questions)
+    is_correct = question_function()
+    if is_correct:
+        print("Yay you got it right!")
+        quiz.questions.remove(question_function)
+    else:
+        print("Your gonna be here for a while.")
