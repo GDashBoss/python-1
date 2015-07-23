@@ -3,10 +3,8 @@
 import colors as c
 
 def ask(question):
-    print(c.orange + question)
-    answer = input(' ' + c.pink).lower().strip()
+    print(c.red + question)
+    answer = input("> ")
+    answer = answer.lower().strip()
+    print(c.reset,end="")
     return answer
-
-if __name__ == "__main__":
-    name = ask("what is your name?")
-    print(name)

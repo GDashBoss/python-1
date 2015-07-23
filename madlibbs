@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+
+from utils import ask
+import colors as c
+
+text = '''Da Craziest Thing Evah
+
+I like to listen to {Celebrity} on the radio. I eat stale {Food1} with
+{Liquid} mixed into it. If I ever meet {Female Celebrity}, I would have
+a romantic, {Noun} lit date with her. If I ever meet {Male Celebrity} I
+will play {Game} with him.I hope {Person} ever sees my picture, because
+it was taken {Number} years ago, and now I am more {Adjective} than
+before. I hate {Plural Noun1} and love {Plural Noun2}. If I see {Plural Noun1}
+I kick it and {Verb} over it. I have {Number2} dollars and when I see
+one I go like this: $_$.{Food2} taste bad and I {Verb2} them out.
+If you {Emotion} this madlibbs, do it {Number3} times please then I will
+{Emotion2} you! This is the {Time} of this madlibbs! Goodbye...
+'''
+
+lines = text.splitlines()
+title = lines[0]
+text = "\n".join(lines[1:])
+
+print(c.clear + title)
+
+words = {
+    "Celebrity" : None,
+    "Food1" : None,
+    "Liquid" : None,
+    "Female Celebrity" : None,
+    "Noun" : None,
+    "Male Celebrity" : None,
+    "Game" : None,
+    "Person" : None,
+    "Number" : None, 
+    "Adjective" : None,
+    "Plural Noun1" : None,
+    "Plural Noun2" : None,
+    "Verb" : None,
+    "Number2" : None,
+    "Food2" : None,
+    "Verb2" : None,
+    "Emotion" : None,
+    "Number3" : None,
+    "Emotion2" : None,
+    "Time" : None,
+}
+
+for key in words:
+    words[key] = c.red + ask(key.rstrip('123456789') + ': ') + c.reset
+
+print(c.clear + title)
+print(text.format(**words))
+
+
+
+
+
+
+
