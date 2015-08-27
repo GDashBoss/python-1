@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+rolled = input(c.red + "Roll it m8")
+print(c.blue + "M8 you rolled" + rolled + "!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

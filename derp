@@ -15,3 +15,28 @@ print(c.red + "derp")
 print(c.blue + "derp")
 print(c.yellow + "derp")
 print(c.orange + "derp")
+print(c.r + "derp")
+print(c.b + "derp")
+print(c.y + "derp")
+print(c.o + "derp")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

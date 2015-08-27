@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+
+import colors as c
+import random
+
+print('''
+Welcome to the magic 8 ball!!!!!
+Please enter your question below.
+''')
+
+answers = [
+    c.red + 'Wat yo finkin man, definly not!' + c.reset,
+    c.blue + 'Expect it in 10 minutes.' + c.reset,
+    c.yellow + 'Calm down and try again.' + c.reset,
+    c.red + 'Please wait, checking my sources.' + c.reset,
+    c.blue + 'I cannot answer that question, try again.' + c.reset,
+    c.yellow + 'Why,do you reason to be asking me?' + c.reset, 
+    c.red + 'Yes, and THE WORLD WILL END!' + c.reset,
+    c.blue + 'Si, OLE! Ay curumba!' + c.reset,
+    c.yellow + 'Mr. Rob is pregnant!' + c.reset,
+    c.red + 'Hey, 9 + 10 = 21!' + c.reset,
+    c.blue + 'Die in lava man, your question is stupid!' + c.reset,
+    c.yellow + 'Die please, I dont like you!' + c.reset,
+    c.red + 'This is getting annoying, please leave.' + c.reset,
+    ]
+while True:
+    question = input('> ')
+    answer = random.choice(answers)
+    if 'cool' in question:
+        answer = 'Kiss meh!'
+    print(answer)

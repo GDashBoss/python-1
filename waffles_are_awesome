@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.clear)
+print(c.blue + "Do you like waffles?")
+waffles = input(c.blue + '>')
+
+if waffles in ['yes','duh']:
+
+    print(c.clear)
+    print(c.red + "Do you like pancakes?")
+    pancakes = input(c.red + '>')
+    if pancakes in ['yes','duh']:
+
+        print(c.clear)
+        print(c.yellow + "Do you like french toast?")
+        french_toast = input(c.yellow + '>')
+        if french_toast in ['yes','duh']:
+            print(c.orange + "Kewl!")
+
+
+        else:
+            print("Whats wrong with you! French toast is made from the finest French bread!")
+
+    else:
+        print("Whats wrong with you! Pancakes are fluffly, soft... NUM NUM NUM NUM NUM!")        
+
+else:
+    print("Whats wrong with you! If you dont like the next one I'll kill you!")
+
+

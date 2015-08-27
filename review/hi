@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.red + "OMG " + c.blue +  "HI! " + c.yellow + "I need your " + c.red + "name " + c.yellow + "so I can hack you!")
+name = input (c.red + '>' + c.blue)
+print(c.yellow + "Prepare to be hacked sucker!)

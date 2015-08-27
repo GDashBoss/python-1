@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.r + "M8s wanna cross a bridge m8? Its free m8s. That means it doesnt cost any money m8s. If this is new to you m8s that means you m8s are dumb! If you m8s cant count how many times I say m8 or m8s in this then you m8s are EXTRA dumb!! You m8s give up? Well m8s its 13 if you dont know m8s. M8s m8 m8s m8 m8s m8 m8s. Wait make that 22! OMG m8s so many m8s!! Thak you to any ausies in the world for making this progam posibble! Bye!! JK M8S HAHAHAHA!!!")
+
+print(c.b + "Define the meaning of m8:")
+input

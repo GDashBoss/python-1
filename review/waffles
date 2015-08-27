@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.blue + "Do you like waffles? Type in yes or no!")
+waffles = input(c.red + '')
+if waffles == 'yes':
+   
+    print(c.blue + "Do you like pancakes?")
+    pancakes = input(c.red + '')
+    if pancakes == 'yes':
+        
+        print(c.blue + "Do you like french toast?")
+        french_toast = input(c.red + '')
+        if french_toast == 'yes':
+            print(c.yellow + "OMG YOU TO")
+
+        else:
+            print(c.magenta + "....... Im shocked...")
+
+    else:
+        print(c.yellow + "Im this close to punching you!")
+
+else:
+    print(c.green + "Your crazy man")
+
+
+
+
+    #wafflespancakesfrenchtoastrules
